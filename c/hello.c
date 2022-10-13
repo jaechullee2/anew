@@ -2,5 +2,5 @@
 
 void main() {
   /* code */
-  printf("Hello Linux\n");
+  printf("Hello Linux \n");
 }
