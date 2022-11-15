@@ -1,4 +1,14 @@
+*.ftpconfig
 #anew
 mongodb/**/*.json
+#environment files
+.env
 
+#for nodejs node_moudles
+node/**/node_modules
+**/node_modules
+#for mongodb
 mongodb/backup
+
+#python venv
+python/**/.venv
