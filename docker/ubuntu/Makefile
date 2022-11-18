@@ -1,5 +1,5 @@
 build :
-	docker build -t ubuntu .
+	docker build -t ubuntu:x .
 run :
 	docker run --name ubuntu -d -p 8000:80 ubuntu
 exec :
@@ -12,4 +12,5 @@ rm :
 	docker stop ubuntu
 	docker rm ubuntu
 rmi :
-	docker rmi $$(docker images -q)
+	docker rmi ubuntu
+	docker rmi ubuntu:x
