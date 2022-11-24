@@ -1,7 +1,15 @@
 build:
 	docker build -t nodejs .
 run:
-	docker run -it --name nodejs nodejs 
+	docker run -it -p 8000:8000 -d --name nodejs nodejs 
+exec:
+	docker exec -it nodejs /bin/bash
+start:
+	docker start nodejs
+attach:
+	docker attach nodejs
+logs:
+	docker logs nodejs
 ps :
 	docker ps -a
 img:
