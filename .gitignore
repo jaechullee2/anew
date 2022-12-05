@@ -7,6 +7,8 @@ mongodb/**/*.json
 #for nodejs node_moudles
 node/**/node_modules
 **/node_modules
+node/config/pool.js
+node/**/uploadedFiles
 
 #for pool
 node/**/pool.js
