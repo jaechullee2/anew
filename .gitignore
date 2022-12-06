@@ -1,3 +1,7 @@
+#anew
+.c9
+.idea
+
 *.ftpconfig
 #anew
 mongodb/**/*.json
@@ -12,6 +16,7 @@ node/**/uploadedFiles
 
 #for pool
 node/**/pool.js
+node/config/db_config.json
 #for mongodb
 mongodb/backup
 
