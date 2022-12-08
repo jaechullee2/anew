@@ -1,0 +1,22 @@
+<!DOCYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Dynamic Mongo Test</title>
+    </head>
+    <body>
+        <h1>Dynamic Mongo Test</h1>
+        <form method='post' name="mongoform" action="/post_list">
+            <input type="button" value= "mydb User list" onclick='document.targetURL.location.href="/list"'/>
+        <p>
+        userid<input type="text" size='10' name="input"/>
+        <input type="button" value="get" onclick='document.targetURL.location.href="/get_userid?input="+document.mongoform.input.value'/>
+        <p>
+        city<input type="text" size='10' name="city"/>
+        <input type="button" value="get" onclick='document.targetURL.location.href="/get_city?input="+document.mongoform.city.value'/>
+        <p>
+        </form>
+        <iframe name=targetURL class="iframe-preview center" width="75%" height="500" style="border:none;" src="http://13.124.208.24:3000/list"></iframe>
+    
+    </body>
+</html>

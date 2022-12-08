@@ -1,0 +1,14 @@
+use mydb
+db.users.drop()
+
+db.users.insert({userid:"1001", name:"ALLEN", city:"Seoul", sex:"female", age:20})
+db.users.insert({userid:"1002", name:"BLAKE", city:"Busan", sex:"female", age:22})
+db.users.insert({userid:"1003", name:"CLARK", city:"Incheon", sex:"male", age:26})
+db.users.insert({userid:"1004", name:"DABID", city:"Seoul", sex:"male", age:25})
+db.users.insert({userid:"1005", name:"ROREN", city:"Kwangju", sex:"male", age:25})
+
+db.users.find()
+
+
+
+
