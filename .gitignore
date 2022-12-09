@@ -22,3 +22,5 @@ mongodb/backup
 
 #python venv
 python/**/.venv
+
+react/hello_*/public/
