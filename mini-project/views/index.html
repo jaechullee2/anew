@@ -1,0 +1,32 @@
+<!DOCYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Linux</title>
+        <script type="text/javascript">
+             window.setInterval("reloadIFrame();", 5000); 
+             
+             function reloadIFrame() {
+                <!--window.location.reload();-->
+                  window.parent.document.targetURL.location.reload();
+                <!-- window.parent.location.reload();-->
+                 <!--window.parent.location.href = "/list";-->
+             }
+        </script>
+    </head>
+    <body>
+        <h1>Linux miniProject</h1>
+        <form>
+            <input type="button" value= "mydb User list" onclick='document.targetURL.location.href="/list"'/>
+        <p>
+        <input type="button" value="start" onclick='document.targetURL.location.href="/list/start"'/>
+        <p>
+            <input type="button" value="stop" onclick='document.targetURL.location.href="/stop"'/>
+        <p>
+             <p>time<input type="text" size='10' name="time"/>
+        <input type="button" value="time" onclick='location.href="/get?input="+document.mongoform.time.value'/>
+        </form>
+        <iframe id = "targetURL" name="targetURL" class="iframe-preview center" width="75%" height="500" style="border:none;" src="http://13.124.208.24:3000/list"></iframe>
+        
+    </body>
+</html>
